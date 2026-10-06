@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>The Little Prince | เจ้าชายน้อย</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
@@ -46,8 +47,38 @@
         </div>
 
         <div class="hero-image">
-            <img src="images/book-cover.jpg" alt="หน้าปกหนังสือเจ้าชายน้อย">
+
+    <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/book-cover.jpg"
+                     alt="หน้าปกหนังสือเจ้าชายน้อย">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/little-prince2.jpg"
+                     alt="หนังสือเจ้าชายน้อยอีกมุมหนึ่ง">
+            </div>
+
         </div>
+
+        <!-- ปุ่มซ้าย -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- ปุ่มขวา -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
 
     </section>
 
@@ -234,6 +265,130 @@
 
 </section>
 
+    <!-- FAQ Accordion -->
+<section class="faq-section">
+
+    <div class="faq-content">
+
+        <p>FREQUENTLY ASKED QUESTIONS</p>
+
+        <h2>คำถามที่พบบ่อย</h2>
+
+        <div class="accordion" id="littlePrinceAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Q: เจ้าชายน้อยคือใคร?
+                    </button>
+                </h2>
+
+                <div id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#littlePrinceAccordion">
+
+                    <div class="accordion-body">
+                        <strong>A:</strong>
+                        เจ้าชายน้อยเป็นเด็กชายจากดาวเคราะห์ดวงเล็ก ๆ
+                        ที่ออกเดินทางไปยังดาวต่าง ๆ เพื่อเรียนรู้เกี่ยวกับผู้คน
+                        ความสัมพันธ์ และความหมายของชีวิต
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Q: ทำไมเจ้าชายน้อยถึงออกเดินทาง?
+                    </button>
+                </h2>
+
+                <div id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#littlePrinceAccordion">
+
+                    <div class="accordion-body">
+                        <strong>A:</strong>
+                        เขาออกเดินทางเพื่อค้นหาคำตอบและทำความเข้าใจโลก
+                        ระหว่างทางเขาได้พบผู้คนมากมาย
+                        ซึ่งทำให้เขาเรียนรู้มุมมองและความหมายของชีวิตที่แตกต่างกัน
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Q: สุนัขจิ้งจอกสอนอะไรแก่เจ้าชายน้อย?
+                    </button>
+                </h2>
+
+                <div id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#littlePrinceAccordion">
+
+                    <div class="accordion-body">
+                        <strong>A:</strong>
+                        สุนัขจิ้งจอกสอนให้เจ้าชายน้อยเข้าใจถึงความผูกพัน
+                        และความรับผิดชอบต่อสิ่งที่เราสร้างความสัมพันธ์ด้วย
+                        ทำให้เขาเข้าใจว่าคนที่เราผูกพันด้วยนั้นมีความพิเศษสำหรับเรา
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour">
+                        Q: หนังสือเล่มนี้เหมาะกับใคร?
+                    </button>
+                </h2>
+
+                <div id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#littlePrinceAccordion">
+
+                    <div class="accordion-body">
+                        <strong>A:</strong>
+                        หนังสือเล่มนี้เหมาะกับผู้อ่านทุกวัย
+                        โดยเฉพาะคนที่สนใจเรื่องความรัก มิตรภาพ
+                        ความสัมพันธ์ และการมองโลกในมุมที่แตกต่างออกไป
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
     <!-- Footer -->
 <footer class="footer">
@@ -256,9 +411,18 @@
         <p>Created by Chayakorn © 2026</p>
 
     </div>
+    <div class="footer-credit">
+    <p>
+        Image Credits:
+        <a href="ลิงก์ธรรมศาสตร์" target="_blank">มหาวิทยาลัยธรรมศาสตร์</a>
+        ·
+        <a href="https://www.10000tipbook.com/product/7179/the-little-prince-%E0%B8%...
+           target="_blank">10000tipBOOK</a>
+    </p>
+</div>
 
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
